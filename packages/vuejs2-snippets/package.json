@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-84910-fvw33b.92aejnhfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-84910-fvw33b.92aejnhfr/package.tgz",
+        "spec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-84910-fvw33b.92aejnhfr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/apm-install-dir-11878-84910-1wyos84.43wzevobt9"
+    ]
+  ],
+  "_from": "../d-11878-84910-fvw33b.92aejnhfr/package.tgz",
+  "_id": "vuejs2-snippets@1.1.0",
+  "_inCache": true,
+  "_location": "/vuejs2-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-84910-fvw33b.92aejnhfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-84910-fvw33b.92aejnhfr/package.tgz",
+    "spec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-84910-fvw33b.92aejnhfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11878-84910-fvw33b.92aejnhfr/package.tgz",
+  "_shasum": "707ab46f55a340bd9a7356647ddc7c5ca650acd1",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-84910-fvw33b.92aejnhfr/package.tgz",
+  "_where": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/apm-install-dir-11878-84910-1wyos84.43wzevobt9",
+  "author": {
+    "name": "Corentin Andre",
+    "email": "candre@edu.ece.fr",
+    "url": "https://github.com/CorentinAndre"
+  },
+  "bugs": {
+    "url": "https://github.com/CorentinAndre/Vuejs-snippets/issues"
+  },
+  "dependencies": {},
+  "description": "Vuejs 2.0+ snippets for Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/CorentinAndre/Vuejs-snippets#readme",
+  "keywords": [
+    "Vuejs",
+    "snippets",
+    "Vuejs 2.0",
+    "Vue"
+  ],
+  "license": "MIT",
+  "name": "vuejs2-snippets",
+  "optionalDependencies": {},
+  "readme": "[![Installs!](https://img.shields.io/apm/dm/vuejs2-snippets.svg?style=flat-square)](https://atom.io/packages/vuejs2-snippets)\n[![Version!](https://img.shields.io/apm/v/vuejs2-snippets.svg?style=flat-square)](https://atom.io/packages/vuejs2-snippets)\n[![License](https://img.shields.io/apm/l/vuejs2-snippets.svg?style=flat-square)](https://github.com/CorentinAndre/Vuejs-snippets/blob/master/LICENSE)\n\n# Vuejs-snippets\n\nCollection of Vue.js snippets for version 2.0+.\nAlso supports Vuex, vue-router still missing.\n\nFeel free to contribute to this package by submitting a PR!\n\n## Usage\n\nJust press `TAB` or `ENTER` to unfold a snippet\n\n### Single file template\n\n```html\ntemplate          <!--Single file component template-->\n```\n\n### HTML snippets\n\n```html\nrouter-view       <!--Vuejs router-view component-->\nrouter-link       <!--Vuejs router-link component with named route-->\ncomponent         <!--Include component in HTML-->\nsccomponent       <!--Include self closed component in HTML-->\ni18n              <!--Include internationalization component-->\n```\n\n### HTML tags\n\n```html\nv-for             <!--Vuejs binding for list rendering-->\nv-if              <!--Vuejs binding for if conditional rendering-->\nv-else-if         <!--Vuejs binding for else if rendering-->\nv-else            <!--Vuejs binding for else conditional rendering-->\nv-show            <!--Vuejs binding for show conditional rendering-->\nv-model           <!--Vuejs binding for model binding-->\nvClassObj         <!--Vuejs binding for class as an object-->\nvClassArr         <!--Vuejs binding for class as an array-->\n```\n\n### Javascript\n\n```javascript\nbeforeCreate; // Vuejs instance lifecycle hook for beforeCreate\ncreated; // Vuejs instance lifecycle hook for created\nbeforeMount; // Vuejs instance lifecycle hook for beforeMount\nmounted; // Vuejs instance lifecycle hook for mounted\nbeforeUpdate; // Vuejs instance lifecycle hook for beforeUpdate\nupdated; // Vuejs instance lifecycle hook for updated\nbeforeUpdate; // Vuejs instance lifecycle hook for beforeUpdate\nupdated; // Vuejs instance lifecycle hook for updated\nbeforeDestroy; // Vuejs instance lifecycle hook for beforeDestroy\ndestroyed; // Vuejs instance lifecycle hook for destroyed\nbeforeRouteEnter; // Vue-router instance lifecycle hook for beforeRouteEnter\nbeforeRouteUpdate; // Vue-router instance lifecycle hook for beforeRouteUpdate\nbeforeRouteLeave; // Vue-router instance lifecycle hook for beforeRouteLeave\nvwatch; // Vuejs way to watch instance properties\nmethods; // Vuejs methods event handlers\ncomponents; // Use it when you want to add child components to parent component.\nprops; // Vuejs way to pass data to child components\nvprops; // Vuejs way to pass data to child components with validation\nvcomputed; // Vuejs computed property\n```\n\n### Vuex\n\n```javascript\nvstore; // Vuex template for a complete store with state,getters,actions and mutations\nvmut; // Vuex mutation snippet\nvact; // Vuex action snippet\nvget; // Vuex getter snippet\nvtype; // Vuex constant type snipppet\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorentinAndre/Vuejs-snippets.git"
+  },
+  "version": "1.1.0"
+}

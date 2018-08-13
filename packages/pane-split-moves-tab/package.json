@@ -1,0 +1,75 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-118011-4579-1j9htms.5sx26jq0k9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-118011-4579-1j9htms.5sx26jq0k9/package.tgz",
+        "spec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-118011-4579-1j9htms.5sx26jq0k9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/apm-install-dir-118011-4579-2a6e16.j7w05jc3di"
+    ]
+  ],
+  "_from": "../d-118011-4579-1j9htms.5sx26jq0k9/package.tgz",
+  "_id": "pane-split-moves-tab@0.1.0",
+  "_inCache": true,
+  "_location": "/pane-split-moves-tab",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-118011-4579-1j9htms.5sx26jq0k9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-118011-4579-1j9htms.5sx26jq0k9/package.tgz",
+    "spec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-118011-4579-1j9htms.5sx26jq0k9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118011-4579-1j9htms.5sx26jq0k9/package.tgz",
+  "_shasum": "e6c6b064f738bee0df60d77b2412e3ab4c44d114",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-118011-4579-1j9htms.5sx26jq0k9/package.tgz",
+  "_where": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/apm-install-dir-118011-4579-2a6e16.j7w05jc3di",
+  "activationCommands": {
+    "atom-pane": [
+      "pane:split-up",
+      "pane:split-down",
+      "pane:split-left",
+      "pane:split-right"
+    ],
+    ".tab-bar": [
+      "tabs:split-up",
+      "tabs:split-down",
+      "tabs:split-left",
+      "tabs:split-right"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/olmokramer/atom-pane-split-moves-tab/issues"
+  },
+  "dependencies": {},
+  "description": "Pane:split moves tab to new pane",
+  "devDependencies": {
+    "eslint": "^2.7.0"
+  },
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/olmokramer/atom-pane-split-moves-tab#readme",
+  "license": "MIT",
+  "main": "./lib/pane-split-moves-tab",
+  "name": "pane-split-moves-tab",
+  "optionalDependencies": {},
+  "readme": "# pane-split-moves-tab package\n\nTab:split commands moves the tab to the new pane, instead of copying.\n\n![screencast](https://raw.githubusercontent.com/olmokramer/atom-pane-split-moves-tab/master/screencast.gif)\n\n## Copyright & License\n\n&copy; Olmo Kramer, 2015 <br> [MIT License](LICENSE.md)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olmokramer/atom-pane-split-moves-tab.git"
+  },
+  "version": "0.1.0"
+}

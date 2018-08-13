@@ -1,0 +1,171 @@
+'fileTypes': [
+  'liquid'
+  'html'
+]
+'foldingStartMarker': '(?x){%-?\\s*(if|unless|for|paginate|capture|form|case|tablerow|raw|comment|block|paginate|schema|stylesheet|javascript)[^(%})]+-?%}'
+'foldingStopMarker': '(?x){%-?\\s*(endif|endunless|endfor|endpaginate|endcapture|endform|endcase|endtablerow|endraw|endcomment|endblock|endpaginate|endschema|endstylesheet|endjavascript)[^(%})]+-?%}'
+'name': 'HTML (Liquid)'
+'patterns': [
+  {
+    'begin': '({%-?)\\s*comment\\s(-?%})'
+    'end': '({%-?)\\s*endcomment\\s(-?%})'
+    'name': 'comment.block.liquid'
+  }
+  {
+    'begin': '({{-?)'
+    'end': '(-?}})'
+    'name': 'punctuation.output.liquid'
+    'patterns': [
+      {
+        'include': '#template_var'
+      }
+    ]
+  }
+  {
+    'begin': '({%-?)'
+    'end': '(-?%})'
+    'name': 'punctuation.tag.liquid'
+    'patterns': [
+      {
+        'include': '#template_tag_name'
+      }
+      {
+        'include': '#template_var'
+      }
+    ]
+  }
+  {
+    'include': 'text.html.basic'
+  }
+]
+'repository':
+  'assign_op':
+    'patterns': [
+      {
+        'match': '/='
+        'name': 'keyword.operator.assignment.augmented.liquid'
+      }
+    ]
+  'logic_expression':
+    'patterns': [
+      {
+        'match': '/='
+        'name': 'keyword.operator.assignment.augmented.liquid'
+      }
+    ]
+  'logic_op':
+    'patterns': [
+      {
+        'match': '\\s+(and|or|not|contains|(\\!\\=|\\=\\=|<\\=|>\\=|<|>)\\s+'
+        'name': 'keyword.operator.logical.liquid'
+      }
+    ]
+  'template_tag_name':
+    'patterns': [
+      {
+        'captures':
+          '2':
+            'name': 'entity.name.tag.liquid'
+        'match': '(((?<={%)|(?<={%-))\\s*(\\w+))'
+      }
+    ]
+  'template_var':
+    'patterns': [
+      {
+        'captures':
+          '2':
+            'name': 'invalid.illegal.filter.liquid'
+          '3':
+            'name': 'invalid.illegal.filter.liquid'
+        'match': '(\\[)(\\|)(?=[^\\]]*)(?=\\])'
+      }
+      {
+        'match': '(?<=\\s)(\\+|\\-|\\/|\\*)(?=\\s)'
+        'name': 'invalid.illegal.filter.liquid'
+      }
+      {
+        'match': '(false|true|nil|null|empty|blank)'
+        'name': 'constant.language.liquid'
+      }
+      {
+        'captures':
+          '3':
+            'name': 'invalid.illegal.operator.liquid'
+        'match': '(?=if|unless|elsif)\\s*[^%}]+\\s(in)\\s'
+      }
+      {
+        'match': '\\s+(and|or|not|contains|in|by|((\\!|\\=|\\<|\\>)\\=))\\s+'
+        'name': 'keyword.operator.liquid'
+      }
+      {
+        'captures':
+          '2':
+            'name': 'invalid.illegal.assignment.liquid'
+        'match': '(?<=assign)([^\\=]+)(\\=\\=+)'
+      }
+      {
+        'match': '\\|\\s+(?![\\.0-9])[a-zA-Z0-9_-]+\\:\\s+'
+        'name': 'support.function.with-args.liquid'
+      }
+      {
+        'match': '\\|\\s+(?![\\.0-9])[a-zA-Z0-9_-]+\\s+'
+        'name': 'support.function.without-args.liquid'
+      }
+      {
+        'match': '(?<=\\s)(with|offset\\:|limit\\:)(?=\\s)'
+        'name': 'keyword.control.liquid'
+      }
+      {
+        'captures':
+          '2':
+            'name': 'invalid.illegal.argument.liquid'
+        'match': '(?<=include)(.*)(with\\:|offset|limit)(?=\\s)'
+      }
+      {
+        'match': '(?<=\\s)(\\w+\\:)(?=\\:\\s)'
+        'name': 'invalid.illegal.liquid'
+      }
+      {
+        'begin': '"'
+        'end': '"'
+        'name': 'string.quoted.double.liquid'
+      }
+      {
+        'begin': '\''
+        'end': '\''
+        'name': 'string.quoted.single.liquid'
+      }
+      {
+        'match': '([-+]?[0-9]+(\\.[0-9]+)?)'
+        'name': 'constant.numeric.liquid'
+      }
+      {
+        'match': '\\b(break|continue|cycle|assign|increment|decrement|include|form|layout|highlight|highlight_active|json|join|sort|ceil|divided_by|floor|minus|plus|round|times|modulo|money|money_with_currency|money_without_trailing_zeros|money_without_currency|append|camelcase|capitalize|downcase|escape|handleize|md5|newline_to_br|pluralize|prepend|remove|remove_first|replace|replace_first|slice|split|strip|lstrip|rstrip|strip_html|strip_newlines|truncate|truncatewords|uniq|upcase|url_escape|url_param_escape)\\b'
+        'name': 'support.function.liquid'
+      }
+      {
+        'match': '\\b(all_products|canonical_url|current_page|linklists|handle|pages|page_description|page_title|request|scripts|settings|template|article|cart|collection|country_option_tags|customer_address|discount|form|gift_card|link|order|paginate|search|shop|tax_line|transaction|address|blog|checkout|comment|current_tags|customer|forloop|fulfillment|line_item|linklist|page|product|shipping_method|tablerow|theme|variant|map)\\b'
+        'name': 'support.class.liquid'
+      }
+      {
+        'match': '\\b(date|weight_with_unit|index|size|asset_img_url|asset_url|file_img_url|file_url|img_url|product_img_url|url_for_type|url_for_vendor|link_to|link_to_vendor|link_to_type|link_to_tag|link_to_add_tag|link_to_remove_tag)\\b'
+        'name': 'support.variable.liquid'
+      }
+      {
+        'match': '\\b(default|default_errors|default_pagination|first|last|script_tag|stylesheet_tag|img_tag|customer_login_link|global_asset_url|payment_type_img_url|shopify_asset_url)\\b'
+        'name': 'support.constant.liquid'
+      }
+      {
+        'match': '((?<=\\w\\:\\s)\\w+)'
+        'name': 'variable.parameter.liquid'
+      }
+      {
+        'match': '(?<=\\.)\\w+\\b'
+        'name': 'support.variable.liquid'
+      }
+      {
+        'match': '\\w+'
+        'name': 'variable.other.liquid'
+      }
+    ]
+'scopeName': 'text.html.liquid'

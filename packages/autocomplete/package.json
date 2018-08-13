@@ -1,0 +1,67 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-85516-8hxy60.eyd8jpds4i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-85516-8hxy60.eyd8jpds4i/package.tgz",
+        "spec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-85516-8hxy60.eyd8jpds4i/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/apm-install-dir-11878-85516-e484em.jynzalwhfr"
+    ]
+  ],
+  "_from": "../d-11878-85516-8hxy60.eyd8jpds4i/package.tgz",
+  "_id": "autocomplete@0.47.0",
+  "_inCache": true,
+  "_location": "/autocomplete",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-85516-8hxy60.eyd8jpds4i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-85516-8hxy60.eyd8jpds4i/package.tgz",
+    "spec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-85516-8hxy60.eyd8jpds4i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11878-85516-8hxy60.eyd8jpds4i/package.tgz",
+  "_shasum": "ace03a98d5ceec82dfa40f974c821cda302b7519",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/d-11878-85516-8hxy60.eyd8jpds4i/package.tgz",
+  "_where": "/private/var/folders/9s/kgs17p9n7_73xbz66twwwgts769z44/T/apm-install-dir-11878-85516-e484em.jynzalwhfr",
+  "activationCommands": {
+    "atom-text-editor": [
+      "autocomplete:toggle"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/atom/autocomplete/issues"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.0",
+    "underscore-plus": "^1.0.0"
+  },
+  "description": "Display possible completions in the editor with `ctrl-space`.",
+  "devDependencies": {},
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://github.com/atom/autocomplete#readme",
+  "license": "MIT",
+  "main": "./lib/autocomplete",
+  "name": "autocomplete",
+  "optionalDependencies": {},
+  "readme": "# Autocomplete package [![Build Status](https://travis-ci.org/atom/autocomplete.svg?branch=master)](https://travis-ci.org/atom/autocomplete)\n\nView and insert possible completions in the editor using `ctrl-space`.\n\nLooking to use a different keybinding? Copy the following to your\n`~/.atom/keymap.cson` to tweak:\n\n```coffee\n'.active.pane':\n  'ctrl-space': 'autocomplete:toggle'\n```\n\n![](https://f.cloud.github.com/assets/671378/2241254/23bc3d0c-9cc8-11e3-80fe-68f58316a52a.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/autocomplete.git"
+  },
+  "version": "0.47.0"
+}

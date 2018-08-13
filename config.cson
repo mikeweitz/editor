@@ -1,0 +1,36 @@
+"*":
+  core:
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "markdown-preview"
+      "linter-scss-lint"
+    ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "city-lights-syntax"
+    ]
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "77847d00-d6e1-fd11-9e6b-999901536dec"
+  "one-dark-ui": {}
+  "prettier-atom":
+    prettierEslintOptions:
+      prettierLast: true
+    prettierOptions:
+      singleQuote: true
+    useEslint: true
+  "sass-autocompile":
+    compileFiles: "Only with first-line-comment"
+    compileOnSave: false
+    showCompileSassItemInTreeViewContextMenu: false
+  "tree-view": {}
+  "webbox-color": {}
+  welcome:
+    showOnStartup: false
+".sass.source":
+  editor:
+    autoIndentOnPaste: true
